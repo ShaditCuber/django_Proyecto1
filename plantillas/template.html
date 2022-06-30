@@ -8,5 +8,25 @@
 </head>
 <body>
     Excelente, super facil OwO
+    <!--hacemos parrafo de color rojo!-->
+    <p style="color:red">Mi nombre es : {{nombre}}  </p>
+    <!--hacemos parrafo de color verde!-->
+    <p style="color:green">Mi apellido es : {{apellido}}  </p>    
+    <!--hacemos parrafo de color azul!-->
+    <h3 style="color:blue">Este template fue creado el  : {{fecha}}  </h3>
+    <!--for para ver notas-->
+    <h3 style="color:magenta">Estas son mis notas de la universidad </h3>
+    <p>
+        {%for n in notas %}
+           {% if n < 4 %}
+            <p style="color:red">NOTA MALA : {{n}}</p>
+        {% else %}
+            <p style="color:blue">NOTA BUENA : {{n}}</p>
+        {% endif %}    
+            
+        {%endfor%}
+
+    </p>
+    nashess
 </body>
 </html>
